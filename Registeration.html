@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registeration</title>
+    <meta name="description" content="you can sign up here">
+    <style>
+        body {
+            background-image: url("Resources/book.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        label {
+            font-size: 20px;
+            color: rgb(160, 32, 4)
+        }
+
+        .gn {
+            font-size: 14px;
+            color: black;
+        }
+
+        .intersts {
+            font-size: 14px;
+            color: black;
+        }
+
+        input {
+            width: 400px;
+            height: 30px;
+        }
+
+        fieldset {
+            background-color: rgb(235, 214, 175);
+            /* float: left; */
+            margin: auto;
+            width: 65%;
+            margin-top: 80px;
+            box-shadow: 20px 20px 30px rgb(218, 175, 140);
+        }
+
+        legend {
+            font-size: 30px;
+            color: rgb(54, 27, 104)
+        }
+
+        .btn {
+            border: 1px solid rgb(160, 32, 4);
+            height: 40px;
+            background-color: brown;
+            color: rgb(226, 215, 164);
+            font-size: 20px;
+            width: 120px;
+            margin-left: 400px;
+            border: 2px solid rgb(209, 168, 141);
+        }
+
+        .btn:hover {
+            border: 3px solid rgb(128, 89, 201);
+            background-color: rgb(204, 96, 96);
+            color: rgb(212, 212, 76);
+        }
+
+        .ins {
+            width: auto;
+            height: auto;
+        }
+
+        .gender {
+            width: auto;
+            height: auto;
+        }
+
+        .tacbox {
+            display: block;
+            max-width: 800px;
+        }
+
+        .f_name>label::after,
+        .l_name>label::after,
+        .password>label::after,
+        .repassword>label::after,
+        .email>label::after,
+        .phone>label::after,
+        .dob>label::after,
+        .gender>label::after,
+        .file>input::after {
+            content: "*";
+            color: brown;
+        }
+
+        input:invalid {
+            border: 1px solid brown;
+        }
+
+        input:valid {
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        input:valid~.invalid {
+            display: none;
+        }
+
+        input:invalid~.valid {
+            display: none;
+        }
+
+        p {
+            color: rgb(160, 32, 4);
+            margin-left: 390px;
+            font-size: 24px;
+
+        }
+    </style>
+</head>
+
+<body id="body">
+    <fieldset>
+        <form action="thankyou.html" method="get">
+            <div>
+                <input type="hidden" name="id" id="id">
+            </div>
+            <div style="float:left ;">
+                <div class="f_name">
+                    <label for="firstname">First Name </label>
+                </div>
+                <div>
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter First Name" required>
+                    &nbsp; &nbsp; &nbsp; &nbsp; <br>
+                    <span class="invalid" style="color:brown ;">Not valid</span>
+                    <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
+                </div>
+
+            </div>
+            <!-- <br> -->
+            <div class="l_name">
+                <label for="lastname">Last Name </label>
+            </div>
+            <div>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name" required> <br>
+                <span class="invalid" style="color:brown ;">Not valid</span>
+                <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
+            </div>
+            <br>
+            <div style="float:left ;">
+                <div class="password">
+                    <label for="password"> Password </label>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required
+                        maxlength="16">
+                    &nbsp; &nbsp; &nbsp; &nbsp; <br>
+                    <span class="invalid" style="color:brown ;">Not valid</span>
+                    <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
+
+                </div>
+            </div>
+            <!-- <br> -->
+            <div class="repassword">
+                <label for="rpassword">Confirm Password </label>
+            </div>
+            <div>
+                <input type="password" name="rpassword" id="rpassword" placeholder="Confirm Password" required
+                    maxlength="16"> <br>
+                <span class="invalid" style="color:brown ;">Not valid</span>
+                <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
+            </div>
+            <br>
+            <div style="float:left ;">
+                <div class="email">
+                    <label for="email">E-mail </label>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                    &nbsp; &nbsp; &nbsp; &nbsp; <br>
+                    <span class="invalid" style="color:brown ;">Not valid</span>
+                    <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
+                </div>
+            </div>
+            <!-- <br> -->
+            <div class="dob">
+                <label for="birthday"> DOB </label>
+            </div>
+            <div>
+                <input type="date" name="birthday" id="birthday" required> <br>
+                <span class="invalid" style="color:brown ;">Not valid</span>
+                <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
+            </div>
+            <br>
+            <div style="float:left ;">
+                <div class="phone">
+                    <label for="phone">Phone </label>
+                </div>
+                <div>
+                    <input type="tel" name="phone" id="phone" placeholder="+2 010" required> 
+                    &nbsp; &nbsp; &nbsp; &nbsp; <br>
+                    <span class="invalid" style="color:brown ;">Not valid</span>
+                    <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
+                </div>
+            </div>
+            <br>
+            <!-- <fieldset> -->
+            <div class="gender">
+                <label for="gender"> Gender </label>
+            </div>
+            <div>
+                <input class="gender" type="radio" name="gender" value="Male" required>
+                <label class="gn">Male</label>
+                &nbsp; &nbsp;
+                <input class="gender" type="radio" name="gender" value="Female" required>
+                <label class="gn">Female</label>
+            </div>
+            <!-- </fieldset> -->
+            <br>
+            <div class="tacbox">
+                <input id="checkbox" class="ins" type="checkbox" required />
+                <label for="checkbox"> I agree to these <a href="Terms.html">Terms and Conditions</a>.</label>
+            </div>
+            <br>
+            <div>
+                <input class="btn" type="submit"> &nbsp; &nbsp; &nbsp;
+            </div>
+            <p> or sign up using </p>
+            <div style="text-align: center; margin-bottom: 30px; margin-left: 50px;">
+                <img src="Resources/facebook.webp" width="40px" height="40px" usemap="#map1" alt="Facebook" />
+                &nbsp;
+                <img src="Resources/gmail.png" width="40px" height="40px" usemap="#map3" alt="Google" />
+                <map name="map1">
+                    <area shape="circle" coords="66,265,292" href="https://www.facebook.com/">
+                </map>
+                <map name="map3">
+                    <area shape="circle" coords="66,265,292" href="https://www.google.com/">
+                </map>
+            </div>
+
+        </form>
+    </fieldset>
+
+</body>
+
+</html>

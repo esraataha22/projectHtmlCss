@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="description" content="you can sign up here">
+    <style>
+        body {
+            background-image: url("Resources/book.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        label {
+            font-size: 20px;
+            color:rgb(160, 32, 4);
+            margin-right: 450px;
+        }
+        input{
+            width: 500px;
+            height: 30px;
+        }
+        fieldset{
+            border: 1px solid rgb(160, 32, 4);
+            background-color: rgb(240, 219, 174);
+            /* float: left; */
+            margin:auto;
+            width: 50%;
+            margin-top: 150px;
+            text-align: center;
+            box-shadow: 20px 20px 30px rgb(218, 175, 140);
+
+        }
+        legend{
+            font-size: 30px;
+            color:rgb(54, 27, 104);
+            text-align: left;
+        }
+        p{
+            color:rgb(160, 32, 4);
+            margin-left: 15px;
+            font-size: 24px;
+
+        }
+        .btn{
+            height: 40px;
+            background-color:brown;
+            color:rgb(226, 215, 164);
+            font-size: 20px;
+            width: 120px;
+            margin-left: 40px;
+            border:2px solid rgb(209, 168, 141);
+        }
+        .btn:hover{
+            border:3px solid rgb(128, 89, 201);
+            background-color: rgb(204, 96, 96);
+            color: rgb(212, 212, 76);
+        }
+        .tacbox {
+            display:block;
+            max-width: 800px;
+        }        
+        input:invalid{
+            border:1px solid brown;
+        }
+        input:valid{
+            border:1px solid rgb(6, 134, 23);
+        }
+        /* input:valid~.invalid {
+            display: none;
+        } */
+        input:invalid~.valid {
+            display: none;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <fieldset>
+        <form action="logout.html" method="post">
+            <div>
+                <br>
+            <div  class="username">
+                <label for="username">Username </label>
+            </div>
+            <div>
+                <input type="email" name="username" id="username" placeholder="Enter Username" required>
+                &nbsp; &nbsp; &nbsp; &nbsp; <br>
+                <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
+            </div>
+
+            </div>
+            <!-- <br> -->
+            <br>
+                <div class="password">
+                    <label for="password"> Password </label>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required
+                        maxlength="16">
+                        &nbsp; &nbsp; &nbsp; &nbsp; <br>
+                        <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
+                </div>
+            </div>
+            <!-- <br> -->
+            <br>
+            <div>
+                <input class="btn" type="submit" value="Login"> &nbsp; &nbsp; &nbsp; 
+            </div>
+            <p> or login using </p>     
+            <div style="text-align: center; margin-bottom: 30px; margin-left: 20px;">
+                <img src="Resources/facebook.webp" width="40px" height="40px" usemap="#map1" alt="Facebook" />
+                 &nbsp;
+                <img src="Resources/gmail.png" width="40px" height="40px" usemap="#map3" alt="Google" />
+                <map name="map1">
+                    <area shape="circle" coords="66,265,292" href="https://www.facebook.com/">
+                </map>
+                <map name="map3">
+                    <area shape="circle" coords="66,265,292" href="https://www.google.com/">
+                </map>
+            </div>       
+        </form>
+    </fieldset>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+
+body {
+    background-image: url("Resources/222.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar{
+    height:50px;
+    background-color:0;
+    /* rgb(245, 230, 180);  */
+    position: sticky;
+    /* opacity: 0.6; */
+}
+.nav{
+    margin-left: 30px;
+    padding-top:12px;
+    float: right;
+    margin-right: 100px;
+}
+.link{
+    padding: 5px;
+    font-size: 24px;
+    text-decoration: none;
+    border: 3px solid rgb(240, 219, 174);
+    background-color: rgb(182, 98, 30);
+    color: beige;
+    box-shadow: 5px 5px 10px rgb(240, 219, 174);
+}
+.link:hover{
+    border: 3px solid rgb(182, 98, 30);
+    background-color: rgb(245, 237, 219);
+    box-shadow: 5px 5px 10px rgb(182, 98, 30);
+    color: rgb(59, 29, 5);
+}
+.welcome {
+    height:300px;
+    background-image: url("Resources/ktab.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 2px solid rgb(235, 214, 175);
+    box-shadow: 10px 10px 20px rgb(235, 214, 175);
+
+}
+h1{
+    text-align: center;
+    color: rgb(235, 214, 175);
+    font-size: 50px;
+    /* font-family: cooper; */
+    font-family: montserrat;
+    padding-top: 100px;
+    text-shadow: 15px 10px 20px rgb(235, 214, 175);
+}
+.image{
+    width:100%;
+    height: 300px; 
+    /* padding-left: 13px;  */
+    /* padding-top:5px; */
+}
+h2{
+    margin-left: 50px; 
+    margin-bottom: 10px;
+    color: rgb(235, 214, 175);
+    text-shadow: 2px 2px 5px rgb(224, 191, 140);
+
+}
+#novel {
+    margin-left: 120px; 
+    margin-bottom: 10px;
+    color: rgb(235, 214, 175);
+    text-shadow: 2px 2px 5px rgb(224, 191, 140);
+}
+.card{
+    width:300px; 
+    background-color:0 ;
+    /* opacity: 0.6; */
+    border:2px solid rgb(235, 214, 175);
+    box-shadow: 5px 5px 10px rgb(224, 191, 140);
+    display: inline-block;
+}
+.card:hover{
+    width:300px; 
+    /* opacity: 0.6; */
+    border:2px solid rgb(230, 181, 92);
+    box-shadow: 10px 10px 20px rgb(197, 154, 90);
+}
+a{
+    text-decoration: none;
+    color: beige;
+    /* box-shadow: 5px 5px 10px rgb(240, 219, 174); */
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(240, 204, 158);
+    border:2px solid rgb(240, 204, 158);
+    /* box-shadow: 5px 5px 10px rgb(240, 219, 174); */
+}
+.LR{
+    display: inline-block;
+    margin-left: 240px;
+    height: 170px;
+    /* padding-bottom: 30px; */
+}
+.btn { 
+    width: 300px;
+    height: 150px;
+    font-size: 40px;
+    color: rgb(185, 70, 4);
+    border: 3px solid rgb(163, 62, 4);
+    background-color: rgb(235, 214, 175);
+    box-shadow: 5px 5px 10px rgb(235, 214, 175);
+    opacity: 0.5;
+}
+.btn:hover {
+    color:rgb(235, 214, 175);
+    border: 3px solid rgb(235, 214, 175);
+    background-color: rgb(185, 70, 4);
+    box-shadow: 10px 10px 15px rgb(241, 159, 6);
+}
+#about {
+    color: rgb(235, 214, 175);
+    font-size: 60px;
+    font-family: montserrat;
+    margin-bottom: 50px;
+    margin-left: 500px;   
+}
+#log_reg {
+    color: rgb(235, 214, 175);
+    font-size: 45px;
+    font-family: montserrat;
+    margin-bottom: 50px;
+    margin-left: 300px;   
+}
+.footer{
+    height:400px;
+    width: 100%;
+    border: 3px solid rgb(201, 128, 86);
+    background-color: rgb(235, 214, 175);
+    box-shadow: 5px 5px 10px rgb(235, 214, 175);
+    opacity: 0.5;
+    margin-top: 70px;
+
+}
+.contact {
+    height: 60px;
+    border: 3px solid rgb(201, 128, 86);
+    background-color: rgb(167, 132, 69);
+}
+p{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+.social {
+    text-align: center; 
+    /* margin-bottom: 30px;  */
+    margin-top:-50px;
+    margin-right: 50px;
+    float: right;
+}
+.section{
+    display: inline-block;
+    width:300px;
+    text-align: center;
+    margin-left: 30px;
+}
+.section1{
+    display: inline-block;
+    width:300px;
+    text-align: center;
+    margin-left: 30px;
+
+}
+.desc{
+    text-align: center;
+    margin-left: 30px;
+    color:rgb(27, 26, 26);
+}
+ul{
+    margin-left: 50px;
+}
+li{
+    text-align: left;
+    font-size: 22px;
+    color:rgb(27, 26, 26);
+}
+.des{
+    font-size: 28px;
+}
+.contact_1 {
+    font-size: 20px;
+    color:rgb(27, 26, 26);
+    text-align: left;
+}
+.copy {
+    font-size: 14px;
+    text-align: center;;
+}
