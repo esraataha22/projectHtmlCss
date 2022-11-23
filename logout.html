@@ -3,138 +3,126 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Login</title>
     <meta name="description" content="you can sign up here">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <style>
+        body {
+            background-image: url("Resources/book.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        label {
+            font-size: 20px;
+            color:rgb(160, 32, 4);
+            margin-right: 450px;
+        }
+        input{
+            width: 500px;
+            height: 30px;
+        }
+        fieldset{
+            border: 1px solid rgb(160, 32, 4);
+            background-color: rgb(240, 219, 174);
+            /* float: left; */
+            margin:auto;
+            width: 50%;
+            margin-top: 150px;
+            text-align: center;
+            box-shadow: 20px 20px 30px rgb(218, 175, 140);
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        }
+        legend{
+            font-size: 30px;
+            color:rgb(54, 27, 104);
+            text-align: left;
+        }
+        p{
+            color:rgb(160, 32, 4);
+            margin-left: 15px;
+            font-size: 24px;
+
+        }
+        .btn{
+            height: 40px;
+            background-color:brown;
+            color:rgb(226, 215, 164);
+            font-size: 20px;
+            width: 120px;
+            margin-left: 40px;
+            border:2px solid rgb(209, 168, 141);
+        }
+        .btn:hover{
+            border:3px solid rgb(128, 89, 201);
+            background-color: rgb(204, 96, 96);
+            color: rgb(212, 212, 76);
+        }
+        .tacbox {
+            display:block;
+            max-width: 800px;
+        }        
+        input:invalid{
+            border:1px solid brown;
+        }
+        input:valid{
+            border:1px solid rgb(6, 134, 23);
+        }
+        /* input:valid~.invalid {
+            display: none;
+        } */
+        input:invalid~.valid {
+            display: none;
+        }
+    </style>
 </head>
 
 <body id="body">
-    <div class="navbar">
-        <div class="nav">
-            <span class="items"><a class="link" href="#">Home</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <span class="items"><a class="link" href="#about">About us</a> </span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <span class="items"><a class="link" href="#contact">Contact</a> </span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <span class="items"><a class="link" href="index.html">Logout</a> </span> &nbsp; &nbsp; &nbsp;
-        </div>
-        <!-- <img src="Resources/logo.png" style="width:75px; padding-left: 50px; padding-top: 30px;"> -->
-    </div>
-    <br>
-    <div class="welcome">
-        <h1> <b>WELCOME TO OUR BOOK STORE</b></h1>
-    </div>
-    <br> <br>
-    <div class="lbl">
-        <label id="about"><b>About us ...</b></label>
-    </div>
-    <br> <br>
-    <div>
-        <div class="card">
-            <img class="image" src="Resources/child.webp" alt="missing">
-            <div class="container">
-                <h2><b><a href="#">Children Stories</a></b></h2>
+    <fieldset>
+        <form action="logout.html" >
+            <div>
+                <br>
+            <div  class="username">
+                <label for="username">Username </label>
             </div>
-        </div>
-        &nbsp; &nbsp; &nbsp; &nbsp;
+            <div>
+                <input type="email" name="username" id="username" placeholder="Enter Username" required>
+                &nbsp; &nbsp; &nbsp; &nbsp; <br>
+                <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
+            </div>
 
-        <div class="card">
-            <img class="image" src="Resources/history.jpg" alt="missing">
-            <div class="container">
-                <h2><b><a href="#">Historical Books</a></b></h2>
             </div>
-        </div>
-        &nbsp; &nbsp; &nbsp; &nbsp;
-
-        <div class="card">
-            <img class="image" src="Resources/science.jfif" alt="missing">
-            <div class="container">
-                <h2><b><a href="#">Scientifical Books</a></b></h2>
-            </div>
-        </div>
-        &nbsp; &nbsp; &nbsp; &nbsp;
-
-        <div class="card">
-            <img class="image" src="Resources/novels.jpg" alt="missing">
-            <div class="container">
-                <h2 id="novel"><b><a href="#">Novels</a></b></h2>
-            </div>
-        </div>
-        <br> <br> <br> <br> <br>
-    </div>
-    <div class="footer" id="contact">
-        <footer>
-            <div class="contact">
-                <div class="con">
-                    <p> <b>You can contact with us on Social Media</b></p>
+            <!-- <br> -->
+            <br>
+                <div class="password">
+                    <label for="password"> Password </label>
                 </div>
-                <div class="social">
-                    <img src="Resources/facebook.webp" width="30px" height="30px" usemap="#map1" alt="Facebook" />
-                    &nbsp;
-                    <img src="Resources/linkedin.png" width="30px" height="30px" usemap="#map2" alt="LinkedIn" />
-                    &nbsp;
-                    <img src="Resources/google.png" width="30px" height="30px" usemap="#map3" alt="Google" />
-                    &nbsp;
-                    <img src="Resources/twitter2.webp" width="30px" height="30px" usemap="#map4" alt="Twitter" />
-
-                    <map name="map1">
-                        <area shape="circle" coords="66,265,292" href="https://www.facebook.com/">
-                    </map>
-                    <map name="map2">
-                        <area shape="circle" coords="66,265,292" href="https://www.linkedin.com/">
-                    </map>
-                    <map name="map3">
-                        <area shape="circle" coords="66,265,292" href="https://www.google.com/">
-                    </map>
-                    <map name="map4">
-                        <area shape="circle" coords="66,265,292" href="https://www.twitter.com/">
-                    </map>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required
+                        maxlength="16">
+                        &nbsp; &nbsp; &nbsp; &nbsp; <br>
+                        <span class="valid" style="color:rgb(6, 134, 23) ;">✔</span>
                 </div>
             </div>
-
-            <div class="section">
-                <h3 class="des"> <b>BOOK STORE</b></h3>
-                <p class="desc">A place whose aim is to broaden the horizon and increase awareness.
-                    There are all kinds of books and stories in all scientific,
-                    cultural, religious and entertainment fields.
-                </p>
+            <!-- <br> -->
+            <br>
+            <div>
+                <input class="btn" type="submit" value="Login"> &nbsp; &nbsp; &nbsp; 
             </div>
+            <p> or login using </p>     
+            <div style="text-align: center; margin-bottom: 30px; margin-left: 20px;">
+                <img src="Resources/facebook.webp" width="40px" height="40px" usemap="#map1" alt="Facebook" />
+                 &nbsp;
+                <img src="Resources/gmail.png" width="40px" height="40px" usemap="#map3" alt="Google" />
+                <map name="map1">
+                    <area shape="circle" coords="66,265,292" href="https://www.facebook.com/">
+                </map>
+                <map name="map3">
+                    <area shape="circle" coords="66,265,292" href="https://www.google.com/">
+                </map>
+            </div>       
+        </form>
+    </fieldset>
 
-            <div class="section">
-                <h3 class="des"> <b>BOOK</b></h3>
-                <ul>
-                    <li>Historical Books</li>
-                    <li>Scientfical Books</li>
-                    <li>Phisical Books</li>
-                    <li>Religious Books</li>
-                    <li>Mathematical Books</li>
-                    <li>Literary Books</li>
-                    <li>ٍStories & Novels</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h3 class="des"> <b>CONTACT</b></h3>
-                <ul style="list-style-type:none;">
-                    <p class="contact_1"><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                    <p class="contact_1"><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                    <p class="contact_1"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                    <p class="contact_1"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-                </ul>
-            </div>
-            <div class="contact">
-                <div class="copy">
-                    <p>Copyrights © are reserved to ITI</p>
-                </div>
-            </div>
-
-        </footer>
-    </div>
 </body>
-<link rel="stylesheet" href="style.css">
 
 </html>
